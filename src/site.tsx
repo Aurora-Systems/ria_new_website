@@ -113,7 +113,7 @@ const Site = () => {
                 <h1><i className="bi bi-book"></i></h1>
 
                     <h4>Academic Classes</h4>
-                    <p>Comprehensive  curriculum with a strong focus on STEM. Expert instruction in National laguages, mathematics, social studies and eligious education</p>
+                    <p>Comprehensive  curriculum with a strong focus on STEM. Expert instruction in National laguages, mathematics, social studies and religious education</p>
                 </div>
                 <div className="col-sm rounded border p-2">
                 <h1 ><i className="bi bi-plus-circle"></i></h1>

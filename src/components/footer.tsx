@@ -15,7 +15,7 @@ const Footer=()=>{
                 <a className="text-white" href="mailto:admin@ria.co.zw" target="_blank"><span>admin@ria.co.zw</span></a>
                 <a className="text-white" href="https://www.facebook.com/rhapsodyinteracademy" target="_blank"><span>Facebook</span></a>
             </div>
-            <div className="col-sm mb-3 rounded">
+            <div className="col-sm mb-3 rounded text-center">
             <iframe className="rounded bg-dark" src="https://rhapsodyinternationalacademy.substack.com/embed"  ></iframe>
             </div>
         </div>

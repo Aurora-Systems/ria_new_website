@@ -1,6 +1,29 @@
 import ReactImageGallery from "react-image-gallery"
 import gallery_items from "./components/images.json"
+import SubstackFeed from "./components/blog"
+import emailjs from "@emailjs/browser"
+import { FormEvent, useRef } from "react"
+
 const Site = () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const form:any = useRef();
+
+  const sendEmail = (e:FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
     return (
         <div className="container">
             <div className="min-vh-100 d-flex flex-row align-items-center" id="home">
@@ -89,14 +112,19 @@ const Site = () => {
             </div>
             <div className="row gap-3 d-flex justify-content-center text-center">
                 <div className="col-sm rounded border p-2">
+                <h1><i className="bi bi-book"></i></h1>
+
                     <h4>Academic Classes</h4>
                     <p>Comprehensive  curriculum with a strong focus on STEM. Expert instruction in National laguages, mathematics, social studies and eligious education</p>
                 </div>
                 <div className="col-sm rounded border p-2">
+                <h1 ><i className="bi bi-plus-circle"></i></h1>
+
                     <h4>Extra Curricula Activities</h4>
                     <p>A rich selection of clubs and programs such as Drama,Music,Debate, Chess and Art. STEM clubs to promote creativity,innovation and problem solving.</p>
                 </div>
                 <div className="col-sm rounded border p-2">
+                    <h1 ><i className="bi bi-dribbble"></i></h1>
                     <h4>Sports</h4>
                     <p>
                         A variety of physical activities with emphasis on teamwork,discipline and pysical fitness. Sports on offer include athletics, soccer, volleyball and Swimming
@@ -109,6 +137,48 @@ const Site = () => {
 
             </div>
             </div>
+            <div className="mt-5 mb-5" id="blog">
+                <div className="text-center">
+                    <h1 className="display-1">Blog</h1>
+                </div>
+                <div>
+                    <SubstackFeed/>
+                </div>
+            </div>
+            <div>
+                <div  className="text-center">
+                <h1 className="display-2">Contact Us</h1>
+
+                </div>
+                <div className="row">
+                    <div className="col-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.0989599208283!2d31.048248774002072!3d-17.880825683092958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a3ec6971ffe5%3A0xd463af09602ebe9d!2sRhapsody%20International%20Academy!5e0!3m2!1sen!2szw!4v1727018650394!5m2!1sen!2szw" className="w-100 h-100" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div className="col-sm">
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className="mb-2">
+                                <span>Name</span>
+                                <input type="text" className="form-control" name="name" required/>
+                            </div>
+                            <div className="mb-2">
+                                <span>Email</span>
+                                <input type="email" className="form-control" name="email" required/>
+                            </div>
+                            <div className="mb-2">
+                                <span>Contact Number</span>
+                                <input type="tel" className="form-control" name="contact_number" required/>
+                            </div>
+                            <div className="mb-2">
+                                <span>Your Message</span>
+                                <textarea name="message" className="form-control"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" className="btn btn-outline-dark">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>            
 
 
         </div>

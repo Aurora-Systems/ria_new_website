@@ -28,11 +28,10 @@ const Site = () => {
         <div className="container">
             <div className="min-vh-100 d-flex flex-row align-items-center" id="home">
                 <div className="row ">
-                    <div className="col-sm d-flex align-items-center">
+                    <div className="col-sm d-flex align-items-center text-center text-md-start">
                         <div>
                         <h1 className="display-1">Rhapsody International Academy</h1>
                         <p>At Rhapsody International Academy, we are dedicated to providing a holistic, Christian-based education to nurture the potential of each child. Located in the serene environment of Waterfalls, away from the distractions of the city, our school offers a calm and conducive learning atmosphere.</p>
-                        <button className="btn btn-outline-dark">Get In Touch</button>
                         </div>
                     </div>
                     <div className="col-sm ">
@@ -42,7 +41,7 @@ const Site = () => {
             </div>
             <div className="mt-5 mb-5 d-flex flex-row align-items-center" id="about">
                 <div className="row ">
-                    <div className="col-sm order-md-2">
+                    <div className="col-sm order-md-2 text-center text-md-start">
                         <h1 className="display-2">About Us</h1>
                         <p>Founded in 2019, RIA was established with a clear vision: to educate the African child and equip them with the skills needed to excel in the ever-changing world. Inspired by the timeless saying, "Don't give a man a fish, but teach him how to fish," we are committed to empowering our students with knowledge, critical thinking, and problem-solving skills that will last a lifetime.
                         </p><p>
@@ -100,7 +99,6 @@ const Site = () => {
                     <img src="https://ngratesc.sirv.com/ria/P1655189.jpg" className="img-fluid" alt="RIA Teachers taking a group photo" />
                 </div>
                 <div className="text-center mt-3 mb-3">
-                    <button className="btn btn-outline-dark">Apply</button>
                 </div>
 
             </div>

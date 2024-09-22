@@ -150,7 +150,7 @@ const Site = () => {
                 <h1 className="display-2">Contact Us</h1>
 
                 </div>
-                <div className="row">
+                <div className="row mb-3 gap-2">
                     <div className="col-sm">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.0989599208283!2d31.048248774002072!3d-17.880825683092958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a3ec6971ffe5%3A0xd463af09602ebe9d!2sRhapsody%20International%20Academy!5e0!3m2!1sen!2szw!4v1727018650394!5m2!1sen!2szw" className="w-100 h-100" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>

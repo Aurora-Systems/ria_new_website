@@ -12,15 +12,17 @@ const Site = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('service_bjta29a', 'template_nc2cz5f', form.current, {
+        publicKey: 'iCc_0YtixItZkzqWE',
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+            form.current.reset()
+          alert("✅ Message Sent!")
         },
         (error) => {
-          console.log('FAILED...', error.text);
+            console.log(error)
+          alert("⚠️ Failed to send message")
         },
       );
   };

@@ -37,7 +37,7 @@ const Site = () => {
                         </div>
                     </div>
                     <div className="col-sm ">
-                        <img src="https://ngratesc.sirv.com/ria/logo.webp" className="rounded img-fluid " alt="Child reading book in a classroom" />
+                        <img src="https://cdn.clipond.com/ria/logo.webp" className="rounded img-fluid " alt="Child reading book in a classroom" />
                     </div>
                 </div>
             </div>
@@ -50,20 +50,20 @@ const Site = () => {
                             Our philosophy is rooted in our pursuit of excellence, encapsulated in our motto, "Quest for Excellence." From academics to extracurricular activities, we strive for the highest standards. We provide top-notch facilities that have been fully approved by the Ministry of Education, ensuring that your child receives the best possible learning experience.</p>
                     </div>
                     <div className="col-sm d-flex align-items-center">
-                        <img src="https://ngratesc.sirv.com/ria/P1655497.jpg" className="rounded img-fluid " alt="Child reading book in a classroom" />
+                        <img src="https://cdn.clipond.com/ria/P1655497.jpg" className="rounded img-fluid " alt="Child reading book in a classroom" />
                     </div>
 
                 </div>
             </div>
             <div className="mt-5 mb-5 row">
                  <div className="col-sm">
-                    <img src="https://ngratesc.sirv.com/ria/slide_one.44d2a9ae.webp" className="img-fluid" alt="poster"/>
+                    <img src="https://cdn.clipond.com/ria/slide_one.44d2a9ae.webp" className="img-fluid" alt="poster"/>
                  </div>
                  <div className="col-sm">
-                    <img src="https://ngratesc.sirv.com/ria/slide_two.c6261052.webp" className="img-fluid" alt="poster"/>
+                    <img src="https://cdn.clipond.com/ria/slide_two.c6261052.webp" className="img-fluid" alt="poster"/>
                  </div>
                  <div className="col-sm">
-                    <img src="https://ngratesc.sirv.com/ria/slide_three.a4563432.webp" className="img-fluid" alt="poster"/>
+                    <img src="https://cdn.clipond.com/ria/slide_three.a4563432.webp" className="img-fluid" alt="poster"/>
                  </div>
             </div>
             <div id="gallery">
@@ -98,7 +98,7 @@ const Site = () => {
 
                 </div>
                 <div>
-                    <img src="https://ngratesc.sirv.com/ria/P1655189.jpg" className="img-fluid" alt="RIA Teachers taking a group photo" />
+                    <img src="https://cdn.clipond.com/ria/P1655189.jpg" className="img-fluid" alt="RIA Teachers taking a group photo" />
                 </div>
                 <div className="text-center mt-3 mb-3">
                 </div>
